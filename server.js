@@ -18,6 +18,6 @@ server.listen(
   },
   () => {
     console.log('server bound');
-    console.log(server);
+    // console.log(server);
   }
 );
