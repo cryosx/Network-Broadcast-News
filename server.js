@@ -11,6 +11,13 @@ const server = net.createServer(c => {
 server.on('error', err => {
   throw err;
 });
-server.listen(8124, () => {
-  console.log('server bound');
-});
+server.listen(
+  {
+    host: '0.0.0.0',
+    port: 6969
+  },
+  () => {
+    console.log('server bound');
+    console.log(server);
+  }
+);
